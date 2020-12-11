@@ -1,0 +1,93 @@
+$font-family: "メイリオ", sans-serif;
+$background: #fcfffc;
+
+.header{
+    height: 100px;
+    width: auto;
+    text-align: center;
+}
+
+.navbar{
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #caffc5; 
+    }
+    li{
+        float: left;
+        border-right: 1px solid #000000;
+        &:last-child{
+            border-right: none;
+        }
+
+        a{
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            &:hover:not(.active){
+                background-color: #90ff90;
+            }
+        }
+    }
+
+    .active{background-color: #e0ffe0;}
+}
+
+.contents{
+    width: 80%;
+    margin: 0 auto;
+
+    .box{
+        position: relative;
+        margin: 2em auto;
+        padding: 1em;
+        width: auto;
+        border: 1px solid #ccc;
+
+        .title{
+            position: absolute;
+            padding: 0 .5em;
+            left: 20px;
+            top: -15px;
+            background-color: $background;
+            color: #209020;
+            white-space: nowrap;
+            font: {
+                size: x-large;
+                weight: bold;
+            }
+        }
+
+        .text{
+            margin: 5px auto auto 3%;
+            word-wrap: break-word;
+        }
+        .text_right{
+            width: 50%;
+            margin: 5px auto auto 3%;
+            word-wrap: break-word;
+            float: left;
+        }
+    }
+
+    .clearfix:after{
+        content: " ";
+        display: block;
+        clear: both;
+    }
+}
+
+.footer{
+    .text{
+        color: #888;
+    }
+}
+
+body{
+    background-color: $background;
+    font: 100% $font-family;
+}

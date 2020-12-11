@@ -1,0 +1,92 @@
+@charset "UTF-8";
+.header {
+  height: 100px;
+  width: auto;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #caffc5;
+}
+
+.navbar li {
+  float: left;
+  border-right: 1px solid #000000;
+}
+
+.navbar li:last-child {
+  border-right: none;
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+  background-color: #90ff90;
+}
+
+.navbar .active {
+  background-color: #e0ffe0;
+}
+
+.contents {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contents .box {
+  position: relative;
+  margin: 2em auto;
+  padding: 1em;
+  width: auto;
+  border: 1px solid #ccc;
+}
+
+.contents .box .title {
+  position: absolute;
+  padding: 0 .5em;
+  left: 20px;
+  top: -15px;
+  background-color: #fcfffc;
+  color: #209020;
+  white-space: nowrap;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.contents .box .text {
+  margin: 5px auto auto 3%;
+  word-wrap: break-word;
+}
+
+.contents .box .text_right {
+  width: 50%;
+  margin: 5px auto auto 3%;
+  word-wrap: break-word;
+  float: left;
+}
+
+.contents .clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.footer .text {
+  color: #888;
+}
+
+body {
+  background-color: #fcfffc;
+  font: 100% "メイリオ", sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

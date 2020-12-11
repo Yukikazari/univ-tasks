@@ -1,0 +1,50 @@
+$font-family: "メイリオ", sans-serif;
+$background: #fcfffc;
+
+.contents{
+    a{
+        // font-size: large;
+        color: #005000;
+        // text-decoration: none;
+    }
+    .menubox{
+        float: left;
+        position: relative;
+        width: 100%;
+        border: 1px solid #50c050;
+        background-color: #f0fff0;
+
+        img{
+            width: 100%;
+        }
+
+        .menuprice{
+            width: 100%;
+            margin: auto 5px;
+            font-size: large;
+            color: #000030;
+        }
+        .menutext{
+            width: 100%;
+            text-align: center;
+        }
+
+        @media (min-width: 600px){
+            width: 49%;
+        }
+        
+        @media (min-width: 800px){
+            width: 33%;
+        }
+
+        @media (min-width: 1200px){
+            width: 24.5%;
+        }
+    }
+
+    .wrap{
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
