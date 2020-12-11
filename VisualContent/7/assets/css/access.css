@@ -9,4 +9,11 @@
     width: 600px;
   }
 }
+
+.contents .box .text_right {
+  width: auto;
+  margin: 5px auto auto 3%;
+  word-wrap: break-word;
+  float: left;
+}
 /*# sourceMappingURL=access.css.map */

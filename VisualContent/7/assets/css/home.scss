@@ -5,6 +5,15 @@ $background: #fcfffc;
     width: 80%;
     margin: 0 auto;
 
+    .box{
+        .text_right{
+            width: 50%;
+            margin: 5px auto auto 3%;
+            word-wrap: break-word;
+            float: left;
+        }
+    }
+
     img{
         margin: 5px auto;
         width: 45%;
